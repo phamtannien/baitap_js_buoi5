@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+ 
+    <h1>bài tập 1</h1>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    Xem kết quả tuyển sinh
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                      <input type="number" name="" id="diemChuan" class="form-control" placeholder="Nhập điểm chuẩn" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        
+                        <select name="" id="slckhuVuc">
+                         <option value="">chọn khu vực</option>
+                         <option value="0">X</option>
+                          <option value="2" > A </option>
+                          <option value="1" > B</option>
+                          <option value="0.5" > C</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        
+                        <select name="" id="slcdoiTuong">
+                         <option value="">chọn đối tượng</option>
+                         <option value="0"> 0 </option>
+                          <option value="2.5" > 1</option>
+                          <option value="1.5" > 2</option>
+                          <option value="1" > 3</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                      
+                      <input type="number" name="" id="diem1" class="form-control" placeholder="Điểm môn thứ nhất" aria-describedby="helpId">
+                      <input type="number" name="" id="diem2" class="form-control" placeholder="Điểm môn thứ hai" aria-describedby="helpId">
+                      <input type="number" name="" id="diem3" class="form-control" placeholder="Điểm môn thứ ba" aria-describedby="helpId">
+                      
+                    </div>
+                    
+                    <button id="btnketQua" class="btn btn-success">Kết quả</button>
+                </div>
+                <div id="footerKetQua" class="card-footer text-muted">
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <h1>bài tập 2</h1>
+    <div class="container">
+        <input id="hoTen" type="text" placeholder="nhập họ tên">
+        <input id="soKw" type="number" placeholder="nhập số kw">
+        <button id="btnTinhTienDien" class="btn btn-success">tính tiền</button>
+        <p id="pResult"></p>
+    </div>
+    
+    <h1>bài tập 3</h1>
+    <div class="container">
+        <input id="hoVaTen" type="text" placeholder="nhập họ tên">
+        <input id="tongThuNhap" type="number" placeholder="tổng thu nhập năm">
+        <input id="soNguoi" type="number" placeholder="số người phụ thuộc">
+        <button id="btnTinhThue" class="btn btn-success">tính tiền thuế</button>
+        <p id="pKetQua"></p>
+    </div>
+
+    <h1>bài tập 4</h1>
+    <div class="container">
+      <select name="" id="doiTuong" onchange="myFunction(event)">
+        <option value="">chọn loại khách hàng</option>
+        <option value="nhaDan"> Nhà dân </option>
+         <option  value="doanhNghiep" > Doanh nghiệp</option>
+       </select>
+       <input id="maKhachHang" type="text" placeholder="Nhập mã khách hàng">
+       <input id="soKenh" type="number" placeholder="Số kênh cao cấp">
+       <input style="display: none" id="ketNoi" type="number" placeholder="số kết nối">
+       <button  class="btn btn-success" onclick="tinhTienCap()">tính tiền cáp</button>
+        <p id="pTienCap"></p>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
